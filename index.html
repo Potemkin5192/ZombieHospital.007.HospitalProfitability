@@ -1747,8 +1747,8 @@ p.nominalBounds = new cjs.Rectangle(-813.7,-813.7,1627.5,1627.5);
 		function onResize(event) {
 			if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
 				game.setTransform(document.documentElement.clientWidth * .5, document.documentElement.clientHeight * .5, document.documentElement.clientWidth / 580, document.documentElement.clientWidth / 580);
-				top.setTransform(game.x, 0, game.scaleX * 1.05, game.scaleY * 1.05);
-				bottom.setTransform(game.x, document.documentElement.clientHeight, game.scaleX * .9, game.scaleY * .9);
+				top.setTransform(game.x, 0, game.scaleX * 1.15, game.scaleY * 1.15);
+				bottom.setTransform(game.x, document.documentElement.clientHeight, game.scaleX * .8, game.scaleY * .8);
 			}
 			if (document.documentElement.clientWidth > document.documentElement.clientHeight || document.documentElement.clientWidth == document.documentElement.clientHeight) {
 				game.setTransform(document.documentElement.clientWidth * .5, document.documentElement.clientHeight * .5, document.documentElement.clientHeight / 600, document.documentElement.clientHeight / 600);
