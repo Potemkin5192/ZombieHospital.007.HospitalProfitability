@@ -1679,45 +1679,7 @@ p.nominalBounds = new cjs.Rectangle(-813.7,-813.7,1627.5,1627.5);
 			}
 		});
 		window.addEventListener('cashPlay', cashPlay);
-		function cashPlay() {
-			if (top.currentFrame == 90) {
-				top.gotoAndPlay(91);
-				var baseTopScaleX = top.scaleX;
-				var baseTopScaleY = top.scaleY;
-				createjs.Tween.get(top).to({
-					scaleX: top.scaleX * 1.2,
-					scaleY: top.scaleY * 1.2
-				}, 350, createjs.Ease.cubicOut).to({
-					scaleX: baseTopScaleX,
-					scaleY: baseTopScaleY
-				}, 450, createjs.Ease.cubicIn)
-			}
-			if (top.currentFrame == 107) {
-				top.gotoAndPlay(108);
-				var baseTopScaleX = top.scaleX;
-				var baseTopScaleY = top.scaleY;
-				createjs.Tween.get(top).wait(300).to({
-					scaleX: top.scaleX * 1.2,
-					scaleY: top.scaleY * 1.2
-				}, 450, createjs.Ease.cubicOut).to({
-					scaleX: baseTopScaleX,
-					scaleY: baseTopScaleY
-				}, 550, createjs.Ease.cubicIn)
-			}
-			if (top.currentFrame == 158) {
-				top.gotoAndPlay(159);
-				var baseTopScaleX = top.scaleX;
-				var baseTopScaleY = top.scaleY;
-				createjs.Tween.get(top).to({
-					scaleX: top.scaleX * 1.2,
-					scaleY: top.scaleY * 1.2
-				}, 350, createjs.Ease.cubicOut).to({
-					scaleX: baseTopScaleX,
-					scaleY: baseTopScaleY
-				}, 450, createjs.Ease.cubicIn)
-				window.removeEventListener('cashPlay', cashPlay);
-			}
-		}
+		
 		function btnClick() {
 			bottom.gotoAndPlay(30);
 			bottom.btn.gotoAndStop(0);
@@ -1762,6 +1724,45 @@ p.nominalBounds = new cjs.Rectangle(-813.7,-813.7,1627.5,1627.5);
 			resizeCanvas(canvas, ctx, document.documentElement.clientWidth, document.documentElement.clientHeight);
 		}
 		onResize();
+		function cashPlay() {
+			if (top.currentFrame == 90) {
+				top.gotoAndPlay(91);
+				var baseTopScaleX = top.scaleX;
+				var baseTopScaleY = top.scaleY;
+				createjs.Tween.get(top).to({
+					scaleX: top.scaleX * 1.2,
+					scaleY: top.scaleY * 1.2
+				}, 350, createjs.Ease.cubicOut).to({
+					scaleX: baseTopScaleX,
+					scaleY: baseTopScaleY
+				}, 450, createjs.Ease.cubicIn)
+			}
+			if (top.currentFrame == 107) {
+				top.gotoAndPlay(108);
+				var baseTopScaleX = top.scaleX;
+				var baseTopScaleY = top.scaleY;
+				createjs.Tween.get(top).wait(300).to({
+					scaleX: top.scaleX * 1.2,
+					scaleY: top.scaleY * 1.2
+				}, 450, createjs.Ease.cubicOut).to({
+					scaleX: baseTopScaleX,
+					scaleY: baseTopScaleY
+				}, 550, createjs.Ease.cubicIn)
+			}
+			if (top.currentFrame == 158) {
+				top.gotoAndPlay(159);
+				var baseTopScaleX = top.scaleX;
+				var baseTopScaleY = top.scaleY;
+				createjs.Tween.get(top).to({
+					scaleX: top.scaleX * 1.2,
+					scaleY: top.scaleY * 1.2
+				}, 350, createjs.Ease.cubicOut).to({
+					scaleX: baseTopScaleX,
+					scaleY: baseTopScaleY
+				}, 450, createjs.Ease.cubicIn)
+				window.removeEventListener('cashPlay', cashPlay);
+			}
+		}
 		function callToAction() {
 			bottom.gotoAndPlay(30);
 			bottom.btn.gotoAndStop(0);
